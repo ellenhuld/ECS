@@ -3,16 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ECS.Legacy;
+using ECSLegacy;
 
 namespace ECSTest.Unit
 {
     public class FakeHeater : IHeater
     {
+        public int TurnOnCalled { get; set;}
+
         public void TurnOn()
         {
-            //count++;
+            TurnOnCalled++;
         }
+
+        
 
         public void TurnOff()
         {
