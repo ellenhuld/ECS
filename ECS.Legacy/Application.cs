@@ -4,7 +4,10 @@
     {
         public static void Main(string[] args)
         {
-            var ecs = new ECS(28);
+            ITempSensor _tempSensor = new TempSensor();
+            IHeater _heater = new Heater();
+
+            var ecs = new ECS(28,_heater,_tempSensor);
 
             ecs.Regulate();
 
