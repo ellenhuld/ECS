@@ -1,18 +1,22 @@
-﻿using ECS.Legacy;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ECSLegacy;
 
 namespace ECSTest.Unit
 {
-    public class FakeHeate : IHeater
+    public class FakeHeater : IHeater
     {
+        public int TurnOnCalled { get; set;}
+
         public void TurnOn()
         {
-            System.Console.WriteLine("Heater is on");
+            TurnOnCalled++;
         }
+
+        
 
         public void TurnOff()
         {
