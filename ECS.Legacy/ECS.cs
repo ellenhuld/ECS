@@ -6,7 +6,8 @@
         private readonly TempSensor _tempSensor;
         private readonly Heater _heater;
 
-        public ECS(int thr)
+        public ECS(int thr
+            )
         {
             SetThreshold(thr);
             _tempSensor = new TempSensor();
