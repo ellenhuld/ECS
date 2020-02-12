@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ECS.Legacy;
 
-namespace ECS.Legacy
+namespace ECSTest.Unit
 {
     public class FakeTempSensor : ITempSensor
     {
