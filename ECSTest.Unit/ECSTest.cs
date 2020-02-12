@@ -13,6 +13,7 @@ namespace ECSTest.Unit
     public class ECSTest
     {
         private TempSensor _uut;
+        
 
         [SetUp]
         {
