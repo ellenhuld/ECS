@@ -12,11 +12,12 @@ namespace ECSTest.Unit
     [TestFixture]
     public class ECSTest
     {
-        private TempSensor _uut;
+        private FakeTempSensor _uut;
 
         [SetUp]
+        public void Setup()
         {
-            _uut = new TempSensor();
+            _uut = new FakeTempSensor();
         } 
     }
 }

@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ECS.Legacy;
 
-namespace ECS.Legacy
+namespace ECSTest.Unit
 {
-    class FakeTempSensor : ITempSensor
+    public class FakeTempSensor : ITempSensor
     {
         public int _temp { get; set; }
         public int GetTemp()
