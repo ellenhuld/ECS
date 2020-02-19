@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using NUnit.Framework;
-using ECS.Legacy;
+using ECSLegacy;
 
 
 namespace ECSTest.Unit
@@ -12,12 +12,22 @@ namespace ECSTest.Unit
     [TestFixture]
     public class ECSTest
     {
-        private FakeTempSensor _uut;
+        private ECS _uut;
+        private FakeTempSensor _fakeTempSensor;
+        private FakeHeater _fakeHeater;
 
         [SetUp]
         public void Setup()
         {
-            _uut = new FakeTempSensor();
+
+            _fakeTempSensor = new FakeTempSensor();
+            _fakeHeater = new FakeHeater();
+            _uut = new ECS(20,_fakeHeater,_fakeTempSensor);
         } 
+
+        //[Test]
+
+
+
     }
 }

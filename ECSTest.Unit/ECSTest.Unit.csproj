@@ -57,9 +57,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ECS.Legacy\ECS.Legacy.csproj">
+    <ProjectReference Include="..\ECS.Legacy\ECSLegacy.csproj">
       <Project>{7bba6d8f-4649-4adb-b90e-94f0fb6554ac}</Project>
-      <Name>ECS.Legacy</Name>
+      <Name>ECSLegacy</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
